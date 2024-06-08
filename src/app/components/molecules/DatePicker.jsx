@@ -8,7 +8,7 @@ export const DatePicker = ({ value, onChange, label, name }) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DateTimePicker
-        value={value}
+        value={dayjs(value)}
         onChange={newValue => onChange(newValue)}
         label={label}
         name={name}

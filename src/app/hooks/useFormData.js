@@ -7,7 +7,7 @@ export function useFormData() {
     email: '',
     phone: '',
     address: '',
-    date: null,
+    date: new Date(),
     volumen: '',
   })
   const [error, setError] = useState({

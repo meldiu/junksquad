@@ -1,8 +1,8 @@
-// import styles from './Footer.module.css'
+import styles from './Footer.module.css'
 export const Footer = () => {
   return (
-    <>
-      <h1>{`</Footer>`}</h1>
-    </>
+    <footer className={styles.footer}>
+      <div className={styles.container}></div>
+    </footer>
   )
 }

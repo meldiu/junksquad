@@ -1,4 +1,5 @@
 'use client'
+import styles from './Form.module.css'
 import { useFormData } from '@/hooks/useFormData'
 import { DatePicker } from '@/components/molecules/DatePicker'
 import {
@@ -15,16 +16,11 @@ export const Form = () => {
     useFormData()
 
   return (
-    <Box
-      autoComplete="off"
-      component={'form'}
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1.5rem',
-        padding: '10rem 8rem',
-      }}
-    >
+    <Box autoComplete="off" component={'form'} className={styles.form}>
+      <h3 className={styles.title}>
+        Fill out the form below to schedule a consultation and take the first
+        step towards a clutter-free life!
+      </h3>
       <TextField
         label="Name"
         name="name"
@@ -33,6 +29,7 @@ export const Form = () => {
         onChange={handleChange}
         error={error.errorName}
         helperText={error.messageName}
+        inputProps={{ maxLength: 48 }}
       />
       <TextField
         label="Email"
@@ -42,6 +39,7 @@ export const Form = () => {
         onChange={handleChange}
         error={error.errorEmail}
         helperText={error.messageEmail}
+        inputProps={{ maxLength: 62 }}
       />
       <TextField
         label="Phone number"
@@ -49,15 +47,14 @@ export const Form = () => {
         value={formData.phone}
         onChange={handleChange}
         type="tel"
-        inputProps={{ maxLength: 15 }}
         placeholder="123 456 7890"
         error={error.errorPhone}
         helperText={error.messagePhone}
         InputProps={{
           startAdornment: <InputAdornment position="start">+1</InputAdornment>,
+          maxLength: 15,
         }}
       />
-
       <TextField
         label="Address"
         name="address"
@@ -66,6 +63,7 @@ export const Form = () => {
         onChange={handleChange}
         error={error.errorAddress}
         helperText={error.messageAddress}
+        inputProps={{ maxLength: 220 }}
       />
       <DatePicker
         value={formData.date}
@@ -79,13 +77,20 @@ export const Form = () => {
         name="volumen"
         onChange={handleChange}
       >
-        <MenuItem value={'1/4 Truck'}>1/4</MenuItem>
-        <MenuItem value={'1/2 Truck'}>1/2</MenuItem>
-        <MenuItem value={'3/4 Truck'}>3/4</MenuItem>
-        <MenuItem value={'Full Truck'}>Full</MenuItem>
+        <MenuItem value={'1/4 Truck'}>1/4 Truck</MenuItem>
+        <MenuItem value={'1/2 Truck'}>1/2 Truck</MenuItem>
+        <MenuItem value={'3/4 Truck'}>3/4 Truck</MenuItem>
+        <MenuItem value={'Full Truck'}>Full truck 🚛</MenuItem>
         <MenuItem value={'+1 Truck'}>More!</MenuItem>
       </Select>
-      <Button variant="contained" type="submit" onClick={handleSubmit}>
+
+      <Button
+        variant="contained"
+        type="submit"
+        sx={{ width: '100%' }}
+        // disabled={error.errorName || error.errorEmail || error.errorPhone}
+        onClick={handleSubmit}
+      >
         Send
       </Button>
     </Box>

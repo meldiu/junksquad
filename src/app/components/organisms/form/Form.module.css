@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem;
+
+    background: #FFFFFF;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 0px 06px 0px rgba(0, 0, 0, 0.20);
+}
+
+.title {
+    font-size: var(--title--large);
+    margin-bottom: 1.75rem;
+    text-wrap: pretty;
+}
+
+@media screen and (min-width: 992px) {
+    .form {
+        max-width: 720px;
+    }
+}

@@ -1,0 +1,58 @@
+:root {
+    /* Color styles */
+    --curious-blue-50: #F0F9FF;
+    --curious-blue-100: #E0F1FE;
+    --curious-blue-200: #B9E5FE;
+    --curious-blue-300: #7CD0FD;
+    --curious-blue-400: #36BAFA;
+    --curious-blue-500: #0CA1EB;
+    --curious-blue-600: #0081C9;
+    --curious-blue-700: #0266A2;
+    --curious-blue-800: #065686;
+    --curious-blue-900: #0B486F;
+    --curious-blue-950: #072E4A;
+    --screamin-green-50: #EFFDE8;
+    --screamin-green-100: #DBFACD;
+    --screamin-green-200: #BAF5A1;
+    --screamin-green-300: #7CE953;
+    --screamin-green-400: #67DE3D;
+    --screamin-green-500: #46C41E;
+    --screamin-green-600: #329D13;
+    --screamin-green-700: #287714;
+    --screamin-green-800: #245F15;
+    --screamin-green-900: #215017;
+    --screamin-green-950: #0D2C07;
+    --casper-50: #F5F8FA;
+    --casper-100: #EBF0F3;
+    --casper-200: #D2DEE5;
+    --casper-300: #A3BCC9;
+    --casper-400: #7EA1B2;
+    --casper-500: #5E8699;
+    --casper-600: #4A6C7F;
+    --casper-700: #3C5768;
+    --casper-800: #354A57;
+    --casper-900: #30404A;
+    --casper-950: #202A31;
+
+    /* Text-size styles */
+    /* base size: title--medium (16px) */
+    --display--large: 3.56rem;
+    --display--medium: 2.81rem;
+    --display--small: 2.25rem;
+    --headline--large: 2rem;
+    --headline--medium: 1.75rem;
+    --headline--small: 1.5rem;
+    --title--large: 1.38rem;
+    --title--medium: 1rem;
+    --title--small: 0.88rem;
+    --label--large: 0.88rem;
+    --label--medium: 0.75rem;
+    --label--small: 0.69rem;
+    --body--large: 1rem;
+    --body--medium: 0.88rem;
+    --body--small: 0.75rem;
+}
+
+body {
+    background-color: var(--curious-blue-50);
+}
