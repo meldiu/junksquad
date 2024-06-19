@@ -34,6 +34,9 @@
     --casper-900: #30404A;
     --casper-950: #202A31;
 
+    /* Font-family */
+    --f-f-primary: 'Roboto', sans-serif;
+
     /* Text-size styles */
     /* base size: title--medium (16px) */
     --display--large: 3.56rem;
@@ -51,8 +54,18 @@
     --body--large: 1rem;
     --body--medium: 0.88rem;
     --body--small: 0.75rem;
+
+    /* Font-weight */
+    --f-regular: 400;
+    /* --f-medium: 500; */
+    --f-semibold: 600;
+    --f-bold: 700;
 }
 
 body {
     background-color: var(--curious-blue-50);
+    font-family: var(--f-f-primary);
+    /* line-height: 1.4; */
+    /* font-size: var(--f-s-base); */
+    color: var(--screamin-green-50);
 }

@@ -13,6 +13,7 @@
     font-size: var(--title--large);
     margin-bottom: 1.75rem;
     text-wrap: pretty;
+    color: red;
 }
 
 @media screen and (min-width: 992px) {
