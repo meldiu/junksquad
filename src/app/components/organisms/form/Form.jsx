@@ -15,7 +15,7 @@ export const Form = () => {
         step towards a clutter-free life!`}
       </h3>
       <TextField
-        label="Name"
+        label="Full name"
         name="name"
         type="text"
         value={formData.name}
