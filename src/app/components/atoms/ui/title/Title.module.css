@@ -2,9 +2,9 @@
     font-size: var(--headline--large);
     font-weight: var(--f-semibold);
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 2rem;
 }
 
 .title.secondary {
-    color: var(--curious-blue-600)
+    color: var(--blue--ribbon--600)
 }

@@ -1,22 +1,18 @@
 import { useState } from 'react'
-import { validateEmail, validatePhone } from '@/utils/utils'
+import { validatePhone } from '@/utils/utils'
 
 export function useFormData() {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     address: '',
     date: new Date(),
-    volumen: '',
   })
   const [error, setError] = useState({
     errorName: false,
     messageName: '',
     errorAddress: false,
     messageAddress: '',
-    errorEmail: false,
-    messageEmail: '',
     errorPhone: false,
     messagePhone: '',
   })
@@ -47,19 +43,11 @@ export function useFormData() {
       setError(prev => ({
         ...prev,
         errorAddress: true,
-        messageAddress: 'Please enter a valid email address',
+        messageAddress: 'Please enter a valid address',
       }))
     } else {
       setError(prev => ({ ...prev, errorAddress: false, messageAddress: '' }))
     }
-
-    validateEmail(formData.email)
-      ? setError(prev => ({ ...prev, errorEmail: false, messageEmail: '' }))
-      : setError(prev => ({
-          ...prev,
-          errorEmail: true,
-          messageEmail: 'Please enter a valid email address',
-        }))
 
     validatePhone(formData.phone)
       ? setError(prev => ({ ...prev, errorPhone: false, messagePhone: '' }))

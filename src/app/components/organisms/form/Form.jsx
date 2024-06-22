@@ -2,14 +2,7 @@
 import styles from './Form.module.css'
 import { useFormData } from '@/hooks/useFormData'
 import { DatePicker } from '@/components/molecules/DatePicker'
-import {
-  Box,
-  Button,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
-} from '@mui/material'
+import { Box, Button, InputAdornment, TextField } from '@mui/material'
 
 export const Form = () => {
   const { formData, handleChange, handleDateChange, handleSubmit, error } =
@@ -18,11 +11,11 @@ export const Form = () => {
   return (
     <Box autoComplete="off" component={'form'} className={styles.form}>
       <h3 className={styles.title}>
-        Fill out the form below to schedule a consultation and take the first
-        step towards a clutter-free life!
+        {`Fill out the form below to schedule a consultation and take the first
+        step towards a clutter-free life!`}
       </h3>
       <TextField
-        label="Name"
+        label="Full name"
         name="name"
         type="text"
         value={formData.name}
@@ -30,16 +23,6 @@ export const Form = () => {
         error={error.errorName}
         helperText={error.messageName}
         inputProps={{ maxLength: 48 }}
-      />
-      <TextField
-        label="Email"
-        name="email"
-        type="email"
-        value={formData.email}
-        onChange={handleChange}
-        error={error.errorEmail}
-        helperText={error.messageEmail}
-        inputProps={{ maxLength: 62 }}
       />
       <TextField
         label="Phone number"
@@ -71,24 +54,26 @@ export const Form = () => {
         label="Select your pickup date"
         name="date"
       />
-      <Select
-        value={formData.volumen}
-        label="Volumen"
-        name="volumen"
-        onChange={handleChange}
-      >
-        <MenuItem value={'1/4 Truck'}>1/4 Truck</MenuItem>
-        <MenuItem value={'1/2 Truck'}>1/2 Truck</MenuItem>
-        <MenuItem value={'3/4 Truck'}>3/4 Truck</MenuItem>
-        <MenuItem value={'Full Truck'}>Full truck 🚛</MenuItem>
-        <MenuItem value={'+1 Truck'}>More!</MenuItem>
-      </Select>
 
       <Button
         variant="contained"
         type="submit"
-        sx={{ width: '100%' }}
-        // disabled={error.errorName || error.errorEmail || error.errorPhone}
+        size="large"
+        sx={{
+          width: '100%',
+          color: 'inherit',
+          boxShadow: 'none',
+          background: 'var(--spring--green--300)',
+          ':hover': {
+            background: 'var(--spring--green--400)',
+            boxShadow: 'none',
+          },
+          ':active': {
+            background: 'var(--spring--green--500)',
+            boxShadow: 'none',
+          },
+        }}
+        // disabled={error.errorName || error.errorPhone}
         onClick={handleSubmit}
       >
         Send
