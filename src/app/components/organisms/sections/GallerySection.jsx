@@ -1,6 +1,6 @@
 import styles from './GallerySection.module.css'
 import Image from 'next/image'
-import { Title } from '../../atoms/ui'
+import { Title } from '@/components/atoms/ui'
 
 export const GallerySection = () => {
   return (
