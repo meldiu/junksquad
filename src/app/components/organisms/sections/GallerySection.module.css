@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 3rem;
+}
+
+.description {
+
+    margin-top: 1rem;
+    font-size: var(--title--large);
+}
