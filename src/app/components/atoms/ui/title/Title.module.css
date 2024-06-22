@@ -1,0 +1,10 @@
+.title {
+    font-size: var(--headline--large);
+    font-weight: var(--f-semibold);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.title.secondary {
+    color: var(--curious-blue-600)
+}
