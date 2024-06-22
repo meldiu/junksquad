@@ -1,4 +1,6 @@
-/* .container {} */
+.container> :first-child {
+    text-align: center;
+}
 
 .form-container {
     display: flex;

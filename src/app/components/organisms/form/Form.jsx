@@ -58,7 +58,21 @@ export const Form = () => {
       <Button
         variant="contained"
         type="submit"
-        sx={{ width: '100%' }}
+        size="large"
+        sx={{
+          width: '100%',
+          color: 'inherit',
+          boxShadow: 'none',
+          background: 'var(--spring--green--300)',
+          ':hover': {
+            background: 'var(--spring--green--400)',
+            boxShadow: 'none',
+          },
+          ':active': {
+            background: 'var(--spring--green--500)',
+            boxShadow: 'none',
+          },
+        }}
         // disabled={error.errorName || error.errorPhone}
         onClick={handleSubmit}
       >
