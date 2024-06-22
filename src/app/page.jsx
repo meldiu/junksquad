@@ -1,9 +1,7 @@
-import { Form } from '@/components/organisms/form/Form'
 import { Title, Section } from '@/components/atoms/ui'
 import Image from 'next/image'
-// import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
-// import { FAQ } from '@/utils/const'
-import { CustomizedAccordions } from './components/organisms/ui/accordion/Accordion.jsx'
+
+import { FAQSection, FormSection } from './components/organisms/sections'
 
 export default function HomePage() {
   return (
@@ -48,10 +46,7 @@ export default function HomePage() {
                 fontSize: 'var(--title--large)',
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum
-              dolores, sint voluptate doloremque sunt veniam perferendis
-              cupiditate accusantium ipsam iusto fuga quas accusamus quasi
-              magni, nam consectetur?
+              {`Whether you're dealing with a small amount of clutter or a large-scale cleanout, we're here to help you achieve a peaceful and organized living space.`}
             </h3>
           </div>
           <Image
@@ -117,33 +112,10 @@ export default function HomePage() {
         </div>
       </Section>
       <Section>
-        <Form />
+        <FormSection />
       </Section>
       <Section>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(12, 1fr)',
-            columnGap: '4.5rem',
-          }}
-        >
-          <div style={{ gridColumn: '1/8' }}>
-            <Title type="secondary">{`Frequently Asked Questions`}</Title>
-            <CustomizedAccordions />
-          </div>
-
-          <Image
-            src="/media-placeholder.jpg"
-            alt="junk-squad"
-            width={1280}
-            height={736}
-            style={{
-              width: '100%',
-              height: '100%',
-              gridColumn: '8/13',
-            }}
-          />
-        </div>
+        <FAQSection />
       </Section>
     </div>
   )
