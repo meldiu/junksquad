@@ -1,0 +1,12 @@
+/* .container {} */
+
+
+.form-container {
+    display: flex;
+
+
+    background-color: #FFF;
+
+    border-radius: 40px;
+    overflow: hidden;
+}
