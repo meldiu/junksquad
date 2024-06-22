@@ -1,30 +1,27 @@
 export const FAQ = [
   {
-    question: 'What is JunkSquad?',
+    question: 'What types of junk do you remove?',
     answer:
-      'JunkSquad is a service that helps you to clean up your clutter and junk. We provide a simple and efficient way to clean up your junk. ',
+      'We remove a wide variety of junk, including appliances, furniture, electronics, construction debris, and more. Our team is equipped to handle large and small items, as well as bulkier items like mattresses and couches.',
   },
   {
-    question: 'How do I get started?',
+    question: 'Do you donate items?',
     answer:
-      'JunkSquad is a service that helps you to clean up your clutter and junk. We provide a simple and efficient way to clean up your junk. ',
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.',
   },
   {
-    question:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in.?',
+    question: 'How do you determine pricing?',
     answer:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.',
   },
   {
-    question:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in.?',
+    question: 'Are your workers fully insured and background-checked?',
     answer:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.',
   },
   {
-    question:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in.?',
+    question: 'What is your process for handling hazardous materials?',
     answer:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.',
   },
 ]
