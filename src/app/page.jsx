@@ -4,6 +4,7 @@ import {
   FAQSection,
   FormSection,
   GallerySection,
+  SizeSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -32,8 +33,7 @@ export default function HomePage() {
         <GallerySection />
       </Section>
       <Section>
-        <Title type="secondary">{` Tackling the Tiny and the Towering`}</Title>
-        <div>ESTA ES LA NUEVA SECCIÓN</div>
+        <SizeSection />
       </Section>
       <Section>
         <FormSection />
