@@ -26,7 +26,7 @@ export default function HomePage() {
         <Title type="secondary">
           {`When choosing Junk Squad, you'll get junk removal service that stands out for:`}
         </Title>
-        <div>DIV</div>
+        <div>Sección con vídeo</div>
       </Section>
       <Section>
         <GallerySection />
