@@ -34,33 +34,21 @@
     --spring--green--900: #0A5D22;
     --spring--green--950: #00340F;
 
-
     /* Font-family */
     --f-f-primary: 'Roboto', sans-serif;
 
-    /* Text-size styles */
-    /* base size: title--medium (16px) */
-    --display--large: 3.56rem;
-    --display--medium: 2.81rem;
-    --display--small: 2.25rem;
-    --headline--large: 2rem;
-    --headline--medium: 1.75rem;
-    --headline--small: 1.5rem;
-    --title--large: 1.38rem;
-    --title--medium: 1rem;
-    --title--small: 0.88rem;
-    --label--large: 0.88rem;
-    --label--medium: 0.75rem;
-    --label--small: 0.69rem;
-    --body--large: 1rem;
-    --body--medium: 0.88rem;
-    --body--small: 0.75rem;
+    /* Text-size */
+    --fs-sm: clamp(0.8rem, -0.09vi + 0.82rem, 0.75rem);
+    --fs-base: clamp(1rem, 0vi + 1rem, 1rem);
+    --fs-md: clamp(1.25rem, 0.15vi + 1.21rem, 1.33rem);
+    --fs-lg: clamp(1.56rem, 0.39vi + 1.47rem, 1.78rem);
+    --fs-xl: clamp(1.95rem, 0.76vi + 1.76rem, 2.37rem);
+    --fs-xxl: clamp(2.44rem, 1.3vi + 2.12rem, 3.16rem);
+    --fs-xxxl: clamp(3.05rem, 2.1vi + 2.53rem, 4.21rem);
 
     /* Font-weight */
-    --f-regular: 400;
-    /* --f-medium: 500; */
-    --f-semibold: 600;
-    --f-bold: 700;
+    --fw-regular: 400;
+    --fw-bold: 700;
 
     /* UI */
     --max-width: 1440px;
