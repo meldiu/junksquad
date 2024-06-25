@@ -5,6 +5,7 @@ import {
   FormSection,
   GallerySection,
   SizeSection,
+  VideoSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -24,10 +25,7 @@ export default function HomePage() {
         </Title>
       </Section>
       <Section>
-        <Title type="secondary">
-          {`When choosing Junk Squad, you'll get junk removal service that stands out for:`}
-        </Title>
-        <div>Sección con vídeo</div>
+        <VideoSection />
       </Section>
       <Section>
         <GallerySection />
