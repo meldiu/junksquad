@@ -6,7 +6,7 @@
 }
 
 .description {
-    font-size: var(--title--large);
+    font-size: var(--fs-md);
 }
 
 .image-container {

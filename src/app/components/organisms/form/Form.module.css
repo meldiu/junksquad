@@ -6,7 +6,7 @@
 }
 
 .title {
-    font-size: var(--title--large);
+    font-size: var(--fs-md);
     text-wrap: pretty;
 }
 

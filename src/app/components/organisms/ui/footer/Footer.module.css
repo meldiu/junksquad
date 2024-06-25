@@ -40,7 +40,7 @@
 
 .information span,
 .horary span {
-    font-size: var(--title--large);
+    font-size: var(--fs-md);
 }
 
 .divider {
