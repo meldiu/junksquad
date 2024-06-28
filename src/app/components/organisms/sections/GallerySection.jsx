@@ -11,7 +11,7 @@ export const GallerySection = () => {
             {`From Clutter to Clean: Our Junk Removal Services in Action`}
           </Title>
           <p className={styles.description}>
-            {`Whether you're dealing with a small amount of clutter or a large-scale cleanout, we're here to help you achieve a peaceful and organized living space.`}
+            {`Whether you're dealing with a small amount of clutter or a large-scale clean out, we're here to help you achieve a peaceful and organized living space.`}
           </p>
         </div>
 
