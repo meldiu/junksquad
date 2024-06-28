@@ -57,5 +57,6 @@
 body {
     background-color: var(--blue--ribbon--50);
     font-family: var(--f-f-primary);
+    font-size: var(--fs-base);
     color: var(--blue--ribbon--950);
 }
