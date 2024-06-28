@@ -13,11 +13,12 @@ export const FAQSection = () => {
 
       <div className={styles['image-container']}>
         <Image
-          src="/media-placeholder.jpg"
+          src="/FAQ-img.webp"
           alt="junk-squad"
           className={styles.image}
           width={1280}
           height={736}
+          loading="lazy"
         />
       </div>
     </div>
