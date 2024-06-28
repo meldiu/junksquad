@@ -22,7 +22,6 @@ export const GallerySection = () => {
             width={600}
             height={300}
             loading="lazy"
-            className={` ${styles.image} ${styles['image-0']}`}
           />
         </div>
       </div>
@@ -35,7 +34,6 @@ export const GallerySection = () => {
             width={420}
             height={360}
             loading="lazy"
-            className={` ${styles.image} ${styles['image-1']}`}
           />
         </div>
         <div className={styles['image-container']}>
@@ -45,7 +43,6 @@ export const GallerySection = () => {
             width={420}
             height={360}
             loading="lazy"
-            className={` ${styles.image} ${styles['image-2']}`}
           />
         </div>
         <div className={styles['image-container']}>
@@ -55,7 +52,6 @@ export const GallerySection = () => {
             width={420}
             height={360}
             loading="lazy"
-            className={` ${styles.image} ${styles['image-3']}`}
           />
         </div>
       </div>
