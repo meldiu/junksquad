@@ -16,8 +16,8 @@ export const FAQSection = () => {
           src="/FAQ-img.webp"
           alt="junk-squad"
           className={styles.image}
-          width={1280}
-          height={736}
+          width={600}
+          height={400}
           loading="lazy"
         />
       </div>
