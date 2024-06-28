@@ -1,3 +1,77 @@
 .footer {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100dvh;
+
+    background-color: var(--spring--green--300);
+}
+
+.container {
+    width: var(--max-width);
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.horary {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.information span,
+.horary span {
+    font-size: var(--fs-md);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue--ribbon--950);
+    margin-top: 3rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    .footer {
+        height: auto;
+    }
+
+    .container {
+        padding: 8rem 3rem 2rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 50vh;
+    }
+
+    .information {
+        align-self: flex-end;
+    }
+
+    .horary {
+        width: 50ch;
+    }
 }

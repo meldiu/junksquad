@@ -8,6 +8,10 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import './globals.css'
+import {
+  // Header,
+  Footer,
+} from '@/components/organisms/ui'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +27,10 @@ export default function RootLayout({ children }) {
       // className={inter.className}
       >
         <CssBaseline />
-        {children}
+        <main style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
