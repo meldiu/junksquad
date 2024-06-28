@@ -17,7 +17,7 @@ export const GallerySection = () => {
 
         <div className={styles['image-container']}>
           <Image
-            src="/0-galley-img.webp"
+            src="/0-gallery-img.webp"
             alt="junk-squad"
             width={600}
             height={300}
@@ -29,7 +29,7 @@ export const GallerySection = () => {
       <div className={styles['second-section']}>
         <div className={styles['image-container']}>
           <Image
-            src="/1-galley-img.webp"
+            src="/1-gallery-img.webp"
             alt="junk-squad"
             width={420}
             height={360}
@@ -38,7 +38,7 @@ export const GallerySection = () => {
         </div>
         <div className={styles['image-container']}>
           <Image
-            src="/2-galley-img.webp"
+            src="/2-gallery-img.webp"
             alt="junk-squad"
             width={420}
             height={360}
@@ -47,7 +47,7 @@ export const GallerySection = () => {
         </div>
         <div className={styles['image-container']}>
           <Image
-            src="/3-galley-img.webp"
+            src="/3-gallery-img.webp"
             alt="junk-squad"
             width={420}
             height={360}
