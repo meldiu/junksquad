@@ -1,0 +1,10 @@
+.title {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.title.secondary {
+    color: var(--blue--ribbon--600)
+}

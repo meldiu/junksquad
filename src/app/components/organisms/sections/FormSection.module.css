@@ -1,0 +1,32 @@
+.container> :first-child {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--casper--50);
+
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+/* !!! */
+.image-container img {
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .form-container {
+        flex-direction: row;
+    }
+
+    .form-container> :first-child {
+        flex-basis: 80%;
+    }
+
+    .form-container> :not(:first-child) {
+        flex-basis: auto;
+    }
+}

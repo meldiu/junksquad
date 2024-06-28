@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem 3rem;
+}
+
+.title {
+    font-size: var(--fs-md);
+    text-wrap: pretty;
+}
+
+@media screen and (min-width: 992px) {
+    .form {
+        padding: 4rem;
+    }
+}

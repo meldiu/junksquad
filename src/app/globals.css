@@ -1,0 +1,61 @@
+:root {
+    /* Color styles */
+    --casper--50: #F5F8FA;
+    --casper--100: #EBF0F3;
+    --casper--200: #D2DEE5;
+    --casper--300: #A3BCC9;
+    --casper--400: #7EA1B2;
+    --casper--500: #5E8699;
+    --casper--600: #4A6C7F;
+    --casper--700: #3C5768;
+    --casper--800: #354A57;
+    --casper--900: #30404A;
+    --casper--950: #202A31;
+    --blue--ribbon--50: #EEF4FF;
+    --blue--ribbon--100: #D9E6FF;
+    --blue--ribbon--200: #BCD3FF;
+    --blue--ribbon--300: #8EB8FF;
+    --blue--ribbon--400: #5991FF;
+    --blue--ribbon--500: #2962FF;
+    --blue--ribbon--600: #1B46F5;
+    --blue--ribbon--700: #1433E1;
+    --blue--ribbon--800: #172AB6;
+    --blue--ribbon--900: #192A8F;
+    --blue--ribbon--950: #141B57;
+    --spring--green--50: #EEFFF1;
+    --spring--green--100: #D7FFE1;
+    --spring--green--200: #B2FFC4;
+    --spring--green--300: #57FF81;
+    --spring--green--400: #33F564;
+    --spring--green--500: #09DE3F;
+    --spring--green--600: #01B830;
+    --spring--green--700: #059029;
+    --spring--green--800: #0A7125;
+    --spring--green--900: #0A5D22;
+    --spring--green--950: #00340F;
+
+    /* Font-family */
+    --f-f-primary: 'Roboto', sans-serif;
+
+    /* Text-size */
+    --fs-sm: clamp(0.8rem, -0.09vi + 0.82rem, 0.75rem);
+    --fs-base: clamp(1rem, 0vi + 1rem, 1rem);
+    --fs-md: clamp(1.25rem, 0.15vi + 1.21rem, 1.33rem);
+    --fs-lg: clamp(1.56rem, 0.39vi + 1.47rem, 1.78rem);
+    --fs-xl: clamp(1.95rem, 0.76vi + 1.76rem, 2.37rem);
+    --fs-xxl: clamp(2.44rem, 1.3vi + 2.12rem, 3.16rem);
+    --fs-xxxl: clamp(3.05rem, 2.1vi + 2.53rem, 4.21rem);
+
+    /* Font-weight */
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* UI */
+    --max-width: 1440px;
+}
+
+body {
+    background-color: var(--blue--ribbon--50);
+    font-family: var(--f-f-primary);
+    color: var(--blue--ribbon--950);
+}
