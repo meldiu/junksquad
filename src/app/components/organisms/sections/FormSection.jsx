@@ -10,10 +10,11 @@ export const FormSection = () => {
       <div className={styles['form-container']}>
         <div className={styles['image-container']}>
           <Image
-            src="/media-placeholder.jpg"
+            src="/form-img.webp"
             alt="junk-squad"
-            width={1280}
-            height={736}
+            width={700}
+            height={500}
+            loading="lazy"
           />
         </div>
         <Form />

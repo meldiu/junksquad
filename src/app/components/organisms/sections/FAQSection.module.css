@@ -1,4 +1,5 @@
 .container {
+    width: 100%;
     display: flex;
 }
 
@@ -6,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    width: 100%;
 }
 
 .image-container {
@@ -18,8 +20,12 @@
     }
 
     .image-container {
+        width: 100%;
         display: block;
     }
 
-    /* .image {} */
+    .image {
+        min-width: 100%;
+        border-radius: 0 24px 24px 0;
+    }
 }

@@ -26,7 +26,6 @@ export const SizeSection = () => {
       <p className={`${styles.paragraph} ${styles['paragraph-3']}`}>
         <strong>
           <span>{`So, don't hesitate to reach out to us, no matter the size or scope of your junk removal requirements. `}</span>
-
           <span>{`We're here to make your life easier, one load at a time.`}</span>
         </strong>
       </p>
