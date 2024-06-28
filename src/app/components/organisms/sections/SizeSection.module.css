@@ -4,6 +4,22 @@
     grid-template-rows: repeat(5, auto);
     row-gap: 1.5rem;
 
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    background-color: var(--spring--green--200);
+
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+
+    top: 3%;
+    left: -25%;
+
+    z-index: -1;
 }
 
 .title-container {
@@ -47,6 +63,15 @@
         grid-template-rows: repeat(4, auto);
         column-gap: 2.5rem;
         row-gap: 2.5rem;
+    }
+
+    .container::after {
+        width: 485px;
+        height: 485px;
+        top: auto;
+        left: auto;
+        bottom: -10%;
+        right: -10%;
     }
 
     .title-container {
