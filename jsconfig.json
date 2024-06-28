@@ -9,7 +9,6 @@
       "@/services/*": ["./src/app/services/*"],
       "@/libs/*": ["./src/app/libs/*"],
       "@/utils/*": ["./src/app/utils/*"],
-      
     }
   }
 }
