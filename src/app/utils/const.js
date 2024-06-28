@@ -2,7 +2,7 @@ export const FAQ = [
   {
     question: 'What types of junk do you remove?',
     answer:
-      'We remove a wide variety of junk, including appliances, furniture, electronics, construction debris, and more. Our team is equipped to handle large and small items, as well as bulkier items like mattresses and couches.',
+      'We offer comprehensive junk removal services to handle a wide range of items, from small household appliances and furniture to large bulky items and even construction debris; in addition, we provide light demolition services for tasks like tearing down sheds, dismantling decks, or removing unwanted structures, ensuring a thorough clean-up.',
   },
   {
     question: 'Do you donate items?',
