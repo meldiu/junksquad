@@ -1,77 +1,75 @@
 .footer {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
 
     background-color: var(--spring--green--300);
 }
 
 .container {
     width: var(--max-width);
-    padding: 2rem 1rem;
 
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-    gap: 1.5rem;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
 
-    gap: 3rem;
-
+    gap: 2.5rem;
 }
 
-.information {
+.content .contact-container,
+.content .hours-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.horary {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.hours-container .bold {
+    font-weight: var(--fw-bold);
 }
 
-.information span,
-.horary span {
+.content span {
     font-size: var(--fs-md);
 }
+
+
 
 .divider {
     width: 100%;
     height: 2px;
     background-color: var(--blue--ribbon--950);
-    margin-top: 3rem;
 }
 
+.copyright-container {
+    text-align: center;
+}
+
+.logo-container {
+    display: none;
+}
 
 @media screen and (min-width: 992px) {
-    .footer {
-        height: auto;
-    }
-
     .container {
-        padding: 8rem 3rem 2rem;
+        padding: 5rem 5rem 2rem;
     }
 
     .content {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        min-height: 50vh;
+        margin-bottom: 1rem;
     }
 
-    .information {
-        align-self: flex-end;
-    }
-
-    .horary {
-        width: 50ch;
+    .logo-container {
+        display: block;
+        max-width: 360px;
+        height: auto;
+        margin-bottom: 1.5rem;
     }
 }

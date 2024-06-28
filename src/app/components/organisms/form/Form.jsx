@@ -51,7 +51,7 @@ export const Form = () => {
       <DatePicker
         value={formData.date}
         onChange={handleDateChange}
-        label="Select your pickup date"
+        label="Select your desired pick-up date"
         name="date"
       />
 
