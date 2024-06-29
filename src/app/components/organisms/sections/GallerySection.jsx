@@ -2,7 +2,7 @@ import styles from './GallerySection.module.css'
 import Image from 'next/image'
 import { Title } from '@/components/atoms/ui'
 
-export const GallerySection = () => {
+export function GallerySection() {
   return (
     <div className={styles.container}>
       <div className={styles['first-section']}>

@@ -3,7 +3,7 @@ import { Title } from '@/components/atoms/ui'
 import { Form } from '@/components/organisms/form/Form'
 import Image from 'next/image'
 
-export const FormSection = () => {
+export function FormSection() {
   return (
     <div className={styles.container}>
       <Title type="secondary">{`Junk-Free Living Starts Here`}</Title>

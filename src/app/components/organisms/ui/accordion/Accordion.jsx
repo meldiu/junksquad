@@ -43,7 +43,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, 0)',
 }))
 
-export const CustomizedAccordions = () => {
+export function CustomizedAccordions() {
   return (
     <div>
       {FAQ.map(({ question, answer }, index) => (
