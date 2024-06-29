@@ -5,7 +5,7 @@ import {
   FormSection,
   GallerySection,
   SizeSection,
-  VideoSection,
+  CharacteristicsSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -25,7 +25,7 @@ export default function HomePage() {
         </Title>
       </Section>
       <Section>
-        <VideoSection />
+        <CharacteristicsSection />
       </Section>
       <Section>
         <GallerySection />
