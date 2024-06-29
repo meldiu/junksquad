@@ -9,7 +9,7 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import './globals.css'
 import {
-  // Header,
+  Header,
   Footer,
 } from '@/components/organisms/ui'
 
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
       // className={inter.className}
       >
         <CssBaseline />
+        <Header/>
         <main style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           {children}
         </main>
