@@ -7,6 +7,7 @@ import {
   SizeSection,
   CharacteristicsSection,
   TestimonialsSection,
+  AboutSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -16,9 +17,7 @@ export default function HomePage() {
         <Title type="secondary">{`HeroSection`}</Title>
       </Section>
       <Section>
-        <Title type="secondary">
-          {`Are you tired of dealing with unwanted junk and clutter?`}
-        </Title>
+        <AboutSection />
       </Section>
       <Section>
         <Title type="secondary">
