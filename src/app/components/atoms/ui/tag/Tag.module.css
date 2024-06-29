@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 4px 8px;
+    border: 1px solid var(--blue--ribbon--500);
+    border-radius: 12px;
+}
+
+.text {
+    color: var(--blue--ribbon--500);
+    font-size: var(--fs-sm);
+}

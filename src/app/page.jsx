@@ -5,7 +5,9 @@ import {
   FormSection,
   GallerySection,
   SizeSection,
-  VideoSection,
+  CharacteristicsSection,
+  TestimonialsSection,
+  AboutSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -14,10 +16,8 @@ export default function HomePage() {
       <Section>
         <Title type="secondary">{`HeroSection`}</Title>
       </Section>
-      <Section>
-        <Title type="secondary">
-          {`Are you tired of dealing with unwanted junk and clutter?`}
-        </Title>
+      <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
+        <AboutSection />
       </Section>
       <Section>
         <Title type="secondary">
@@ -25,7 +25,7 @@ export default function HomePage() {
         </Title>
       </Section>
       <Section>
-        <VideoSection />
+        <CharacteristicsSection />
       </Section>
       <Section>
         <GallerySection />
@@ -35,6 +35,9 @@ export default function HomePage() {
       </Section>
       <Section>
         <FormSection />
+      </Section>
+      <Section>
+        <TestimonialsSection />
       </Section>
       <Section>
         <FAQSection />

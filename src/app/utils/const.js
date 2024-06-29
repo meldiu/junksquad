@@ -20,3 +20,66 @@ export const FAQ = [
     answer: `We have a specialized process for handling hazardous materials, such as electronics, chemicals, and batteries. Our team is trained to handle these items safely and responsibly, ensuring they are disposed of in accordance with local regulations and environmental standards.`,
   },
 ]
+
+export const CHARACTERISTICS = [
+  {
+    title: 'Professionalism',
+    description:
+      'Our team is trained and experienced in junk and debris removal, guaranteeing high-quality service.',
+    icon: '/trophy.svg',
+    alt: 'TODO',
+  },
+  {
+    title: 'Flexibility',
+    description:
+      'We can adapt to your needs and schedules to ensure our service fits your requirements.',
+    icon: '/clock.svg',
+    alt: 'TODO',
+  },
+  {
+    title: 'Effective Disposal',
+    description:
+      'We ensure that all collected items are disposed of in an efficient and responsible manner. Whenever possible, we also make donations, giving your unwanted items a second life.',
+    icon: '/trash.svg',
+    alt: 'TODO',
+  },
+]
+
+export const TESTIMONIALS = [
+  {
+    name: 'John Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 4,
+  },
+  {
+    name: 'Jahn Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 5,
+  },
+  {
+    name: 'Jhon Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 3,
+  },
+  {
+    name: 'Jhan Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 5,
+  },
+  {
+    name: 'Jhin Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 4,
+  },
+  {
+    name: 'Jhen Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 2,
+  },
+]

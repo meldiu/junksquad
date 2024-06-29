@@ -4,7 +4,7 @@ import { LocalizationProvider, DateTimePicker } from '@mui/x-date-pickers'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import dayjs from 'dayjs'
 
-export const DatePicker = ({ value, onChange, label, name }) => {
+export function DatePicker({ value, onChange, label, name }) {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DateTimePicker

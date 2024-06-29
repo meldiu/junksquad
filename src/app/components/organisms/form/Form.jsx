@@ -4,7 +4,7 @@ import { useFormData } from '@/hooks/useFormData'
 import { DatePicker } from '@/components/molecules/DatePicker'
 import { Box, Button, InputAdornment, TextField } from '@mui/material'
 
-export const Form = () => {
+export function Form() {
   const { formData, handleChange, handleDateChange, handleSubmit, error } =
     useFormData()
 

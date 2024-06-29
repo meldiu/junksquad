@@ -1,7 +1,7 @@
 import styles from './SizeSection.module.css'
 import Image from 'next/image'
 import { Title } from '@/components/atoms/ui'
-export const SizeSection = () => {
+export function SizeSection() {
   return (
     <div className={styles.container}>
       <div className={styles['title-container']}>

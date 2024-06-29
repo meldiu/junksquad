@@ -3,7 +3,7 @@ import { CustomizedAccordions } from '@/components/organisms/ui/accordion/Accord
 import { Title } from '@/components/atoms/ui'
 import Image from 'next/image'
 
-export const FAQSection = () => {
+export function FAQSection() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
