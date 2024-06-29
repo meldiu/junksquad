@@ -6,20 +6,23 @@
     width: 100%;
 
     position: relative;
+    z-index: 100;
 }
 
 .container::after {
     content: '';
+    border-top-left-radius: 100% 60%;
+    border-top-right-radius: 100% 60%;
     position: absolute;
-    background-color: var(--blue--ribbon--300);
-
-    height: 320px;
-
-    z-index: -1;
-    top: 0;
+    bottom: -5rem;
     left: -5rem;
-    right: -5rem;
+    z-index: -1;
+    width: calc(100% + 10rem);
+    background-color: var(--blue--ribbon--50);
+    height: 55%;
+    /* transform: rotate(180deg); */
 }
+
 
 .container>:nth-child(3) {
     border-radius: 24px;

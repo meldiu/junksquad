@@ -8,6 +8,7 @@ export function AboutSection() {
       <Title>
         {`Are you tired of dealing with unwanted junk and clutter?`}
       </Title>
+
       <p>{`At Junk Squad, we know that a cluttered and disorganized space can be overwhelming and stressful. Clutter and junk can quickly take over your home, office, or property, making it difficult to maintain a clean and organized space. `}</p>
       <div className={styles['image-container']}>
         <Image

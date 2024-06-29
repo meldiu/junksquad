@@ -16,7 +16,7 @@ export default function HomePage() {
       <Section>
         <Title type="secondary">{`HeroSection`}</Title>
       </Section>
-      <Section>
+      <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
         <AboutSection />
       </Section>
       <Section>
