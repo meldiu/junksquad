@@ -44,3 +44,42 @@ export const CHARACTERISTICS = [
     alt: 'TODO',
   },
 ]
+
+export const TESTIMONIALS = [
+  {
+    name: 'John Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 4,
+  },
+  {
+    name: 'Jahn Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 5,
+  },
+  {
+    name: 'Jhon Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 3,
+  },
+  {
+    name: 'Jhan Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 5,
+  },
+  {
+    name: 'Jhin Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 4,
+  },
+  {
+    name: 'Jhen Doe',
+    description:
+      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    stars: 2,
+  },
+]
