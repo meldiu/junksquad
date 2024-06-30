@@ -1,6 +1,7 @@
 import { Resend } from 'resend'
 import { EmailTemplate } from '@/components/organisms/email-template/EmailTemplate'
 import { NextResponse } from 'next/server'
+import dayjs from 'dayjs'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -20,7 +21,7 @@ export async function POST(req) {
         name,
         phone,
         address,
-        date,
+        date: dayjs(date).format('MMMM D, YYYY'),
       }),
     })
 
