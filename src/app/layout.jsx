@@ -12,32 +12,32 @@ import { Header, Footer } from '@/components/organisms/ui'
 export const metadata = {
   title: {
     template: '%s | JunkSquad',
-    default: 'JunkSquad',
+    default: 'Full Service Junk Removal Services | JunkSquad',
   },
   authors: [
     { name: 'Melissa', url: 'https://www.behance.net/melicolors' },
     { name: 'Eduardo', url: 'https://github.com/MrRedu' },
   ],
   creator: 'Meldiu',
-  description: '',
-  keywords: ['', '', ''],
+  description: '--- DESCRIPTION METATAG ---',
+  keywords: ['KeyWord1', 'KeyWord2', 'KeyWord3'],
   openGraph: {
-    title: 'JunkSquad',
-    description: '',
+    title: 'Full Service Junk Removal Services | JunkSquad',
+    description: '--- DESCRIPTION OP ---',
     url: '',
     siteName: 'JunkSquad',
     images: [
       {
-        url: 'https://i.ibb.co/g37bq8f/og-repo.webp',
+        url: 'https://ibb.co/mbfXMNV',
         width: 800,
         height: 600,
-        alt: 'Compilation of web development and design tools and resources.',
+        alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
       },
       {
-        url: 'https://i.ibb.co/g37bq8f/og-repo.webp',
+        url: 'https://ibb.co/mbfXMNV',
         width: 1800,
         height: 1600,
-        alt: 'Compilation of web development and design tools and resources.',
+        alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
       },
     ],
     locale: 'en_US',

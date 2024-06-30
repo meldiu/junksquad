@@ -21,6 +21,13 @@
     gap: .25rem;
 }
 
+.title {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    color: var(--blue--ribbon--600)
+}
+
 /* Wave/shape */
 .container::after {
     content: '';
@@ -34,12 +41,6 @@
     background-color: var(--blue--ribbon--50);
     height: 100%;
     transform: rotate(180deg);
-}
-
-.sub-title {
-    font-size: var(--fs-lg);
-    font-weight: var(--fw-bold);
-    color: var(--blue--ribbon--950)
 }
 
 .image-container {

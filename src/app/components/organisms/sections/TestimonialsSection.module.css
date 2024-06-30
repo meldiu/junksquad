@@ -17,5 +17,6 @@
 @media screen and (min-width: 992px) {
     .content {
         gap: 2.5rem;
+        overflow-x: hidden;
     }
 }
