@@ -1,16 +1,19 @@
 'use client'
 import styles from './Form.module.css'
+import { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { Box, Button, InputAdornment, TextField } from '@mui/material'
-
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+import dayjs from 'dayjs'
+import { BUSINESS_PHONE } from '@/utils/const'
 
 export function Form() {
   const {
     register,
     handleSubmit,
     control,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -21,25 +24,31 @@ export function Form() {
     },
   })
 
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+
   const onSubmit = async data => {
-    console.log(data)
+    setLoading(true)
 
     const formDataObj = new FormData()
-    for (const key in data) {
-      if (Array.isArray(data[key])) {
-        const checkedItems = data[key]
-          .filter(item => item.checked)
-          .map(item => item.name)
-        const checkedItemsAsString = checkedItems.join(', ')
-        formDataObj.append(key, checkedItemsAsString)
-      } else {
-        formDataObj.append(key, data[key])
-      }
 
-      await fetch('/api/send', {
-        method: 'POST',
-        body: formDataObj,
-      })
+    for (const key in data) {
+      formDataObj.append(key, data[key])
+    }
+
+    const result = await fetch('/api/send', {
+      method: 'POST',
+      body: formDataObj,
+    })
+
+    if (result.status === 200) {
+      setLoading(false)
+      reset()
+    }
+
+    if (result.status === 500) {
+      setLoading(false)
+      setError(true)
     }
   }
 
@@ -129,6 +138,7 @@ export function Form() {
               value={field.value}
               onChange={newValue => field.onChange(newValue)}
               inputRef={field.ref}
+              minDate={dayjs()}
             />
           )}
         />
@@ -161,7 +171,13 @@ export function Form() {
         onClick={handleSubmit}
       >
         {`Send`}
+        {loading && 'ing...'}
       </Button>
+      {error && (
+        <span
+          className={styles.error}
+        >{`Something went wrong sending the form. Contact us at ${BUSINESS_PHONE}`}</span>
+      )}
     </Box>
   )
 }

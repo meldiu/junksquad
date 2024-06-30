@@ -71,3 +71,6 @@ export const TESTIMONIALS = [
     stars: 2,
   },
 ]
+
+export const BUSINESS_PHONE = '+1(407)949-9055'
+export const BUSINESS_EMAIL = 'junksquad@xyz.com'

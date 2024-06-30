@@ -1,5 +1,7 @@
-import Image from 'next/image'
 import styles from './Footer.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import { BUSINESS_PHONE, BUSINESS_EMAIL } from '@/utils/const'
 export function Footer() {
   return (
     <footer className={styles.footer}>
@@ -17,10 +19,10 @@ export function Footer() {
           <div className={styles['contact-container']}>
             <span>{`Miami, Florida`}</span>
             <span>
-              <a href="mailto: junksquad@xyz.com">{`junksquad@xyz.com`}</a>
+              <Link href={`mailto: ${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</Link>
             </span>
             <span>
-              <a href="tel: +1 123 456 7890">{`+1 123 456 7890`}</a>
+              <Link href={`tel: ${BUSINESS_PHONE}`}>{BUSINESS_PHONE}</Link>
             </span>
           </div>
 

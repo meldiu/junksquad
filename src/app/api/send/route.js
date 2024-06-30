@@ -4,13 +4,13 @@ import { NextResponse } from 'next/server'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-export async function POST(req, res) {
+export async function POST(req) {
   try {
     const formData = await req.formData()
     const name = formData.get('name')
     const phone = formData.get('phone')
     const address = formData.get('address')
-    const date = formData.getAll('date')
+    const date = formData.get('date')
 
     await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
