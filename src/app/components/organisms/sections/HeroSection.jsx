@@ -1,9 +1,15 @@
+'use client'
 import styles from './HeroSection.module.css'
 import Image from 'next/image'
 import { Title, Tag } from '@/components/atoms/ui'
 import { Button } from '@mui/material'
 
 export function HeroSection() {
+  const handleClick = () => {
+    const targetElement = document.getElementById('formSection')
+    targetElement.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -18,7 +24,6 @@ export function HeroSection() {
         <p>{`Contact us today to schedule a free estimate and get started on your project!`}</p>
         <Button
           variant="contained"
-          // type="submit"
           size="large"
           sx={{
             width: 'fit-content',
@@ -36,6 +41,7 @@ export function HeroSection() {
               boxShadow: 'none',
             },
           }}
+          onClick={handleClick}
         >
           {`Book a Call Now`}
         </Button>

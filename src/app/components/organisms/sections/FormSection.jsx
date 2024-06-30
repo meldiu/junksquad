@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export function FormSection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={'formSection'}>
       <Title type="secondary">{`Junk-Free Living Starts Here`}</Title>
       <div className={styles['form-container']}>
         <div className={styles['image-container']}>
