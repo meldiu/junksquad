@@ -11,10 +11,6 @@ import {
   HeroSection,
 } from './components/organisms/sections'
 
-export const metadata = {
-  title: 'JunkSquad',
-}
-
 export default function HomePage() {
   return (
     <>

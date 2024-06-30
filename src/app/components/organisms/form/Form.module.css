@@ -10,6 +10,11 @@
     text-wrap: pretty;
 }
 
+.error {
+    color: red;
+    font-size: var(--fs-sm);
+}
+
 @media screen and (min-width: 992px) {
     .form {
         padding: 2.5rem;

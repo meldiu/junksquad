@@ -45,7 +45,7 @@ export function HeroSection() {
       <div className={styles['image-container']}>
         <Image
           src="/hero-img.webp"
-          alt="junk-squad"
+          alt="Man carrying a hand trolley."
           width={600}
           height={400}
           loading="eager"
