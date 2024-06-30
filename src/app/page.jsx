@@ -8,13 +8,18 @@ import {
   CharacteristicsSection,
   TestimonialsSection,
   AboutSection,
+  HeroSection,
 } from './components/organisms/sections'
+
+export const metadata = {
+  title: 'JunkSquad',
+}
 
 export default function HomePage() {
   return (
-    <div>
-      <Section>
-        <Title type="secondary">{`HeroSection`}</Title>
+    <>
+      <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
+        <HeroSection />
       </Section>
       <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
         <AboutSection />
@@ -42,6 +47,6 @@ export default function HomePage() {
       <Section>
         <FAQSection />
       </Section>
-    </div>
+    </>
   )
 }

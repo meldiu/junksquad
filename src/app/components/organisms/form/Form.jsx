@@ -63,6 +63,8 @@ export function Form() {
           width: '100%',
           color: 'inherit',
           boxShadow: 'none',
+          textTransform: 'capitalize',
+          fontWeight: 'bold',
           background: 'var(--spring--green--300)',
           ':hover': {
             background: 'var(--spring--green--400)',
@@ -76,7 +78,7 @@ export function Form() {
         // disabled={error.errorName || error.errorPhone}
         onClick={handleSubmit}
       >
-        Send
+        {`Send`}
       </Button>
     </Box>
   )
