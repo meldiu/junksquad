@@ -35,7 +35,7 @@ export function Header() {
             width={180}
             height={40}
             src="/logo-header.svg"
-            alt="JunkSquad"
+            alt="JunkSquad logo"
             loading="eager"
             priority
             quality={100}

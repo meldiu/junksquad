@@ -18,7 +18,7 @@ export function GallerySection() {
         <div className={styles['image-container']}>
           <Image
             src="/0-gallery-img.webp"
-            alt="junk-squad"
+            alt="Man carrying a hand trolley cart to the company truck."
             width={600}
             height={300}
             loading="lazy"
@@ -30,7 +30,7 @@ export function GallerySection() {
         <div className={styles['image-container']}>
           <Image
             src="/1-gallery-img.webp"
-            alt="junk-squad"
+            alt="Men carrying a box spring."
             width={420}
             height={360}
             loading="lazy"
@@ -39,7 +39,7 @@ export function GallerySection() {
         <div className={styles['image-container']}>
           <Image
             src="/2-gallery-img.webp"
-            alt="junk-squad"
+            alt="Men depositing junk in a truck."
             width={420}
             height={360}
             loading="lazy"
@@ -48,7 +48,7 @@ export function GallerySection() {
         <div className={styles['image-container']}>
           <Image
             src="/3-gallery-img.webp"
-            alt="junk-squad"
+            alt="Man carrying a furniture."
             width={420}
             height={360}
             loading="lazy"

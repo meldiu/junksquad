@@ -14,7 +14,7 @@ export function FAQSection() {
       <div className={styles['image-container']}>
         <Image
           src="/FAQ-img.webp"
-          alt="junk-squad"
+          alt="A man is standing next to clutter."
           className={styles.image}
           width={600}
           height={400}

@@ -11,7 +11,7 @@ export function FormSection() {
         <div className={styles['image-container']}>
           <Image
             src="/form-img.webp"
-            alt="junk-squad"
+            alt="JunkSquad logo on the back of a uniform shirt."
             width={700}
             height={500}
             loading="lazy"

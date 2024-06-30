@@ -9,7 +9,7 @@ export function Footer() {
         <div className={styles['logo-container']}>
           <Image
             src="/logo-footer.svg"
-            alt="Junk squad logo"
+            alt="JunkSquad logo"
             width={1280}
             height={736}
           />
