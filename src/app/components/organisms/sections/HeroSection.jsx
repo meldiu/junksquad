@@ -1,17 +1,13 @@
 'use client'
 import styles from './HeroSection.module.css'
 import Image from 'next/image'
-import { Title, Tag } from '@/components/atoms/ui'
+import { smoothScroll } from '@/utils/utils'
 import { Button } from '@mui/material'
+import { Title, Tag } from '@/components/atoms/ui'
 
 export function HeroSection() {
-  const handleClick = () => {
-    const targetElement = document.getElementById('formSection')
-    targetElement.scrollIntoView({ block: 'center', behavior: 'smooth' })
-  }
-
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={'heroSection'}>
       <div className={styles.content}>
         <Tag text={`Your Trusted Junk Removal Partner`} />
         <div className={styles['title-container']}>
@@ -41,7 +37,7 @@ export function HeroSection() {
               boxShadow: 'none',
             },
           }}
-          onClick={handleClick}
+          onClick={() => smoothScroll('formSection')}
         >
           {`Book a Call Now`}
         </Button>
