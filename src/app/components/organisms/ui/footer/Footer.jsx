@@ -39,7 +39,7 @@ export function Footer() {
 
         <div className={styles['copyright-container']}>
           <span className={styles.copyright}>
-            {`${new Date().getFullYear()} Junk Squad c.a, All rights reserved`}
+            {`© ${new Date().getFullYear()} Junk Squad, All rights reserved.`}
           </span>
         </div>
       </div>
