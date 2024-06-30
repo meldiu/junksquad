@@ -68,18 +68,6 @@ export const TESTIMONIALS = [
     name: 'Jhan Doe',
     description:
       'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
-    stars: 5,
-  },
-  {
-    name: 'Jhin Doe',
-    description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
-    stars: 4,
-  },
-  {
-    name: 'Jhen Doe',
-    description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
     stars: 2,
   },
 ]
