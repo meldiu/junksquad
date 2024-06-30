@@ -36,10 +36,12 @@
     transform: rotate(180deg);
 }
 
-.sub-title {
-    font-size: var(--fs-lg);
+
+.title {
+    font-size: var(--fs-xl);
     font-weight: var(--fw-bold);
-    color: var(--blue--ribbon--950)
+    line-height: 1.2;
+    color: var(--blue--ribbon--600)
 }
 
 .image-container {

@@ -7,7 +7,7 @@ import { Button } from '@mui/material'
 export function HeroSection() {
   const handleClick = () => {
     const targetElement = document.getElementById('formSection')
-    targetElement.scrollIntoView({ block: "center", behavior: "smooth" });
+    targetElement.scrollIntoView({ block: 'center', behavior: 'smooth' })
   }
 
   return (
@@ -15,10 +15,10 @@ export function HeroSection() {
       <div className={styles.content}>
         <Tag text={`Your Trusted Junk Removal Partner`} />
         <div className={styles['title-container']}>
-          <Title type="secondary">{`Get a Fast and Efficient Junk Removal Solution `}</Title>
-          <h3
-            className={styles['sub-title']}
-          >{`and Say Goodbye to Unwanted Junk and Clutter`}</h3>
+          <h1
+            className={styles.title}
+          >{`Get a Fast and Efficient Junk Removal Solution `}</h1>
+          <Title>{`and Say Goodbye to Unwanted Junk and Clutter`}</Title>
         </div>
         <p>{`We can help you clean up and improve your property with our full range of junk removal and light demolition services. We'll handle the heavy lifting, so you can focus on what really matters. Our team will carefully disassemble, load, and dispose of unwanted items, furniture, appliances, and even small structures. `}</p>
         <p>{`Contact us today to schedule a free estimate and get started on your project!`}</p>
