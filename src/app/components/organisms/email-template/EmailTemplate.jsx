@@ -9,7 +9,7 @@ export const EmailTemplate = ({ name, phone, address, date }) => (
       </span>
     </p>
     <p>
-      Phone:{' '}
+      Phone:{' +1 '}
       <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
         {phone}
       </span>
