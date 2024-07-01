@@ -28,13 +28,13 @@ export const metadata = {
     siteName: 'JunkSquad',
     images: [
       {
-        url: 'https://ibb.co/fkNppq6',
+        url: 'https://i.ibb.co/3pFNN46/op.webp',
         width: 800,
         height: 600,
         alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
       },
       {
-        url: 'https://ibb.co/fkNppq6',
+        url: 'https://i.ibb.co/3pFNN46/op.webp',
         width: 1800,
         height: 1600,
         alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
