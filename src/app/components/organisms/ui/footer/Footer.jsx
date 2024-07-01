@@ -19,10 +19,10 @@ export function Footer() {
           <div className={styles['contact-container']}>
             <span>{`Miami, Florida`}</span>
             <span>
-              <Link href={`mailto: ${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</Link>
+              <Link href={`mailto:${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</Link>
             </span>
             <span>
-              <Link href={`tel: ${BUSINESS_PHONE}`}>{BUSINESS_PHONE}</Link>
+              <Link href={`tel:${BUSINESS_PHONE}`}>{BUSINESS_PHONE}</Link>
             </span>
           </div>
 

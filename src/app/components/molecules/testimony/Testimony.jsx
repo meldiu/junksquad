@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './Testimony.module.css'
+import Rating from '@mui/material/Rating'
 import propTypes from 'prop-types'
 
 export function Testimony({ name = 'John', description, stars }) {
@@ -19,7 +20,13 @@ export function Testimony({ name = 'John', description, stars }) {
         </span>
       </div>
       <span className={styles.description}>{description}</span>
-      <span>{`${'⭐'.repeat(stars)}${`🌑`.repeat(5 - stars)}`}</span>
+      <Rating
+        name="rating"
+        value={stars}
+        precision={0.5}
+        readOnly
+        style={{ color: 'var(--blue--ribbon--500)' }}
+      />
       <span>{}</span>
     </div>
   )

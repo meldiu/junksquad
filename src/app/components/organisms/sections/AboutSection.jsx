@@ -12,12 +12,13 @@ export function AboutSection() {
       <p>{`At Junk Squad, we know that a cluttered and disorganized space can be overwhelming and stressful. Clutter and junk can quickly take over your home, office, or property, making it difficult to maintain a clean and organized space. `}</p>
       <div className={styles['image-container']}>
         <Image
-          src="/about-img.webp"
-          alt="junk-squad"
+          src="/about-gif.gif"
+          alt="Men working at JunkSquad"
           width={600}
-          height={360}
+          height={400}
           loading="lazy"
           className={styles.image}
+          unoptimized
         />
       </div>
       <p>

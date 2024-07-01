@@ -10,9 +10,16 @@
     text-wrap: pretty;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
 .error {
     color: red;
     font-size: var(--fs-sm);
+    padding-left: 1rem;
 }
 
 @media screen and (min-width: 992px) {

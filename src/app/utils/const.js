@@ -50,7 +50,7 @@ export const TESTIMONIALS = [
     name: 'John Doe',
     description:
       'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
-    stars: 4,
+    stars: 4.5,
   },
   {
     name: 'Jahn Doe',
@@ -62,13 +62,13 @@ export const TESTIMONIALS = [
     name: 'Jhon Doe',
     description:
       'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
-    stars: 3,
+    stars: 4,
   },
   {
     name: 'Jhan Doe',
     description:
       'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
-    stars: 2,
+    stars: 5,
   },
 ]
 

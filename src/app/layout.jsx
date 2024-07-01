@@ -2,9 +2,7 @@ import propTypes from 'prop-types'
 
 import '#/node_modules/minireset.css/minireset.min.css'
 import { CssBaseline } from '@mui/material'
-import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
-import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import './globals.css'
 import { Header, Footer } from '@/components/organisms/ui'
@@ -19,25 +17,25 @@ export const metadata = {
     { name: 'Eduardo', url: 'https://github.com/MrRedu' },
   ],
   creator: 'Meldiu',
-  description: '--- DESCRIPTION METATAG ---',
+  description: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,
   keywords: ['KeyWord1', 'KeyWord2', 'KeyWord3'],
   openGraph: {
     title: 'Full Service Junk Removal Services | JunkSquad',
-    description: '--- DESCRIPTION OP ---',
+    description: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,
     url: '',
     siteName: 'JunkSquad',
     images: [
       {
-        url: 'https://ibb.co/fkNppq6',
+        url: 'https://i.ibb.co/3pFNN46/op.webp',
         width: 800,
         height: 600,
-        alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
+        alt: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,
       },
       {
-        url: 'https://ibb.co/fkNppq6',
+        url: 'https://i.ibb.co/3pFNN46/op.webp',
         width: 1800,
         height: 1600,
-        alt: 'ALT TEXT TO IMAGE ON OPEN GRAPH',
+        alt: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,
       },
     ],
     locale: 'en_US',

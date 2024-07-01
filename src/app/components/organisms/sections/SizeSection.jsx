@@ -16,12 +16,7 @@ export function SizeSection() {
         </p>
       </div>
       <div className={styles['image-container']}>
-        <Image
-          src="/size.svg"
-          alt="junk-squad"
-          width={664.81}
-          height={638.93}
-        />
+        <Image src="/size.svg" alt="junk-squad" width={665} height={639} />
       </div>
       <p className={`${styles.paragraph} ${styles['paragraph-3']}`}>
         <strong>
