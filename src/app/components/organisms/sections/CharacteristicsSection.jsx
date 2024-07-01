@@ -10,19 +10,17 @@ export function CharacteristicsSection() {
       <Title type="secondary">
         {`When choosing Junk Squad, you'll get junk removal service that stands out for:`}
       </Title>
-
       <div className={styles.content}>
-        <div className={styles['gif-container']}>
+        <div className={styles['image-container']}>
           <Image
-            src="/about-img.webp"
-            alt="junk-squad"
-            width={1280}
-            height={736}
+            src="/characteristics.webp"
+            alt="Men carrying a box spring."
+            width={730}
+            height={410}
             loading="lazy"
-            className={styles.gif}
+            className={styles.image}
           />
         </div>
-
         <div className={styles.characteristics}>
           {CHARACTERISTICS.map(({ title, description, icon, alt }, index) => (
             <Characteristic
