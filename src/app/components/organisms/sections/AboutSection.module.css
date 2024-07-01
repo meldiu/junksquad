@@ -20,7 +20,6 @@
     width: calc(100% + 10rem);
     background-color: var(--blue--ribbon--50);
     height: 55%;
-    /* transform: rotate(180deg); */
 }
 
 .container>:nth-child(3) {
