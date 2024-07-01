@@ -49,10 +49,10 @@
 
 @media screen and (min-width: 992px) {
     .container {
-        min-height: calc(100dvh - 7.5rem);
+        min-height: auto;
         flex-direction: row;
         align-items: center;
-        padding-top: 0;
+        padding-top: 2rem;
     }
 
     .image-container {
