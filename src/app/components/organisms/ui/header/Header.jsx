@@ -41,7 +41,15 @@ export function Header() {
             quality={100}
             className={styles.logo}
           />
-          <span>{`JS`}</span>
+          <Image
+            width={44}
+            height={44}
+            src="/isotipo.svg"
+            alt="JunkSquad logo isotype"
+            loading="eager"
+            priority
+            quality={100}
+          />
         </Link>
         <Button
           className={styles.button}
