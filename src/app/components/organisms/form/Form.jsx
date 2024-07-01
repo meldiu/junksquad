@@ -63,91 +63,101 @@ export function Form() {
         {`Fill out the form below to schedule a consultation and take the first
         step towards a clutter-free life!`}
       </h3>
-      <TextField
-        label="Full name"
-        name="name"
-        id="name"
-        type="text"
-        {...register('name', {
-          required: 'El nombre es obligatorio',
-          minLength: {
-            value: 3,
-            message: 'El nombre debe tener al menos 3 caracteres',
-          },
-          maxLength: {
-            value: 48,
-            message: 'El nombre no puede exceder los 48 caracteres',
-          },
-        })}
-      />
-      {errors.name && (
-        <span className={styles.error}>{errors.name.message}</span>
-      )}
-
-      <TextField
-        label="Phone number"
-        name="phone"
-        id="phone"
-        type="tel"
-        placeholder="123 456 7890"
-        InputProps={{
-          startAdornment: <InputAdornment position="start">+1</InputAdornment>,
-          maxLength: 15,
-        }}
-        {...register('phone', {
-          required: 'El número de teléfono es obligatorio',
-          pattern: {
-            value: /^\+?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
-            message: 'Número de teléfono no válido',
-          },
-        })}
-      />
-      {errors.phone && (
-        <span className={styles.error}>{errors.phone.message}</span>
-      )}
-
-      <TextField
-        label="Address"
-        name="address"
-        id="address"
-        type="text"
-        {...register('address', {
-          required: 'La dirección es obligatoria',
-          minLength: {
-            value: 6,
-            message: 'La dirección debe tener al menos 6 caracteres',
-          },
-          maxLength: {
-            value: 255,
-            message: 'La dirección no puede exceder los 255 caracteres',
-          },
-        })}
-      />
-      {errors.address && (
-        <span className={styles.error}>{errors.address.message}</span>
-      )}
-
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <Controller
-          control={control}
-          name="date"
-          rules={{ required: 'La fecha es obligatoria' }}
-          render={({ field }) => (
-            <DatePicker
-              label="Select your desired pick-up date"
-              value={field.value}
-              onChange={newValue => field.onChange(newValue)}
-              inputRef={field.ref}
-              minDate={dayjs()}
-            />
-          )}
+      <div className={styles['input-group']}>
+        <TextField
+          label="Full name"
+          name="name"
+          id="name"
+          type="text"
+          {...register('name', {
+            required: 'El nombre es obligatorio',
+            minLength: {
+              value: 3,
+              message: 'El nombre debe tener al menos 3 caracteres',
+            },
+            maxLength: {
+              value: 48,
+              message: 'El nombre no puede exceder los 48 caracteres',
+            },
+          })}
         />
-      </LocalizationProvider>
+        {errors.name && (
+          <span className={styles.error}>{errors.name.message}</span>
+        )}
+      </div>
 
-      {errors.date && (
-        <span className={styles.error}>{errors.date.message}</span>
-      )}
+      <div className={styles['input-group']}>
+        <TextField
+          label="Phone number"
+          name="phone"
+          id="phone"
+          type="tel"
+          placeholder="123 456 7890"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">+1</InputAdornment>
+            ),
+            maxLength: 15,
+          }}
+          {...register('phone', {
+            required: 'El número de teléfono es obligatorio',
+            pattern: {
+              value: /^\+?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
+              message: 'Número de teléfono no válido',
+            },
+          })}
+        />
+        {errors.phone && (
+          <span className={styles.error}>{errors.phone.message}</span>
+        )}
+      </div>
 
+      <div className={styles['input-group']}>
+        <TextField
+          label="Address"
+          name="address"
+          id="address"
+          type="text"
+          {...register('address', {
+            required: 'La dirección es obligatoria',
+            minLength: {
+              value: 6,
+              message: 'La dirección debe tener al menos 6 caracteres',
+            },
+            maxLength: {
+              value: 255,
+              message: 'La dirección no puede exceder los 255 caracteres',
+            },
+          })}
+        />
+        {errors.address && (
+          <span className={styles.error}>{errors.address.message}</span>
+        )}
+      </div>
+
+      <div className={styles['input-group']}>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <Controller
+            control={control}
+            name="date"
+            rules={{ required: 'La fecha es obligatoria' }}
+            render={({ field }) => (
+              <DatePicker
+                label="Select your desired pick-up date"
+                value={field.value}
+                onChange={newValue => field.onChange(newValue)}
+                inputRef={field.ref}
+                minDate={dayjs()}
+              />
+            )}
+          />
+        </LocalizationProvider>
+        {errors.date && (
+          <span className={styles.error}>{errors.date.message}</span>
+        )}
+      </div>
+
+      <div className={styles['input-group']}>
       <Button
         variant="contained"
         type="submit"
@@ -178,6 +188,7 @@ export function Form() {
           className={styles.error}
         >{`Something went wrong sending the form. Contact us at ${BUSINESS_PHONE}`}</span>
       )}
+      </div>
     </Box>
   )
 }

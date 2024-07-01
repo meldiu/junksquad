@@ -18,6 +18,7 @@ export function AboutSection() {
           height={400}
           loading="lazy"
           className={styles.image}
+          unoptimized
         />
       </div>
       <p>
