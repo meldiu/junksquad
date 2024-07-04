@@ -5,8 +5,8 @@ import { useForm, Controller } from 'react-hook-form'
 import { Box, Button, InputAdornment, TextField } from '@mui/material'
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-import dayjs from 'dayjs'
 import { BUSINESS_PHONE } from '@/utils/const'
+import dayjs from 'dayjs'
 
 export function Form() {
   const {
@@ -70,14 +70,14 @@ export function Form() {
           id="name"
           type="text"
           {...register('name', {
-            required: 'El nombre es obligatorio',
+            required: 'Please enter a name',
             minLength: {
               value: 3,
-              message: 'El nombre debe tener al menos 3 caracteres',
+              message: 'Name must be at least 3 characters long',
             },
             maxLength: {
               value: 48,
-              message: 'El nombre no puede exceder los 48 caracteres',
+              message: 'Name must not exceed 48 characters',
             },
           })}
         />
@@ -100,10 +100,14 @@ export function Form() {
             maxLength: 15,
           }}
           {...register('phone', {
-            required: 'El número de teléfono es obligatorio',
+            required: 'Please enter a phone number',
             pattern: {
               value: /^\+?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
-              message: 'Número de teléfono no válido',
+              message: 'Please enter a valid phone number',
+            },
+            minLength: {
+              value: 10,
+              message: 'Phone number must be at least 10 digits long',
             },
           })}
         />
@@ -119,14 +123,14 @@ export function Form() {
           id="address"
           type="text"
           {...register('address', {
-            required: 'La dirección es obligatoria',
+            required: 'Please enter an address',
             minLength: {
               value: 6,
-              message: 'La dirección debe tener al menos 6 caracteres',
+              message: 'Address must be at least 5 characters long',
             },
             maxLength: {
               value: 255,
-              message: 'La dirección no puede exceder los 255 caracteres',
+              message: 'Address must not exceed 255 characters',
             },
           })}
         />
@@ -140,7 +144,7 @@ export function Form() {
           <Controller
             control={control}
             name="date"
-            rules={{ required: 'La fecha es obligatoria' }}
+            rules={{ required: 'Please enter a date' }}
             render={({ field }) => (
               <DatePicker
                 label="Select your desired pick-up date"
@@ -158,36 +162,36 @@ export function Form() {
       </div>
 
       <div className={styles['input-group']}>
-      <Button
-        variant="contained"
-        type="submit"
-        size="large"
-        sx={{
-          width: '100%',
-          color: 'inherit',
-          boxShadow: 'none',
-          textTransform: 'capitalize',
-          fontWeight: 'bold',
-          background: 'var(--spring--green--300)',
-          ':hover': {
-            background: 'var(--spring--green--400)',
+        <Button
+          variant="contained"
+          type="submit"
+          size="large"
+          sx={{
+            width: '100%',
+            color: 'inherit',
             boxShadow: 'none',
-          },
-          ':active': {
-            background: 'var(--spring--green--500)',
-            boxShadow: 'none',
-          },
-        }}
-        onClick={handleSubmit}
-      >
-        {`Send`}
-        {loading && 'ing...'}
-      </Button>
-      {error && (
-        <span
-          className={styles.error}
-        >{`Something went wrong sending the form. Contact us at ${BUSINESS_PHONE}`}</span>
-      )}
+            textTransform: 'capitalize',
+            fontWeight: 'bold',
+            background: 'var(--spring--green--300)',
+            ':hover': {
+              background: 'var(--spring--green--400)',
+              boxShadow: 'none',
+            },
+            ':active': {
+              background: 'var(--spring--green--500)',
+              boxShadow: 'none',
+            },
+          }}
+          onClick={handleSubmit}
+        >
+          {`Send`}
+          {loading && 'ing...'}
+        </Button>
+        {error && (
+          <span
+            className={styles.error}
+          >{`Something went wrong sending the form. Contact us at ${BUSINESS_PHONE}`}</span>
+        )}
       </div>
     </Box>
   )
