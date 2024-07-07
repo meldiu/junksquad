@@ -72,5 +72,40 @@ export const TESTIMONIALS = [
   },
 ]
 
+export const PROCESS = [
+  {
+    number: '01',
+    title: 'Appointment',
+    paragraph:
+      'Fill out our form to book a call and schedule an appointment that fits your needs.',
+    src: '/calendar.svg',
+    altImage: 'TODO',
+  },
+  {
+    number: '02',
+    title: 'Pickup',
+    paragraph:
+      'Our team of professionals will arrive at your location to collect the items you wish to remove.',
+    src: '/truck.svg',
+    altImage: 'TODO',
+  },
+  {
+    number: '03',
+    title: 'Disposal',
+    paragraph:
+      'The collected items will be responsibly disposed of, whenever possible, and donations will be made whenever feasible.',
+    src: '/dumpster.svg',
+    altImage: 'TODO',
+  },
+  {
+    number: '04',
+    title: 'Confirmation',
+    paragraph:
+      'You will receive confirmation that the service has been satisfactorily completed.',
+    src: '/phone.svg',
+    altImage: 'TODO',
+  },
+]
+
 export const BUSINESS_PHONE = '+1(407)949-9055'
 export const BUSINESS_EMAIL = 'junksquad@xyz.com'

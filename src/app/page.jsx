@@ -1,4 +1,4 @@
-import { Title, Section } from '@/components/atoms/ui'
+import { Section } from '@/components/atoms/ui'
 
 import {
   FAQSection,
@@ -9,6 +9,7 @@ import {
   TestimonialsSection,
   AboutSection,
   HeroSection,
+  ProcessSection,
 } from './components/organisms/sections'
 
 export default function HomePage() {
@@ -21,9 +22,7 @@ export default function HomePage() {
         <AboutSection />
       </Section>
       <Section>
-        <Title type="secondary">
-          {`Our junk removal process is simple and efficient`}
-        </Title>
+        <ProcessSection />
       </Section>
       <Section>
         <CharacteristicsSection />
