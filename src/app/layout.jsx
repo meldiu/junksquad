@@ -17,8 +17,8 @@ export const metadata = {
     { name: 'Eduardo', url: 'https://github.com/MrRedu' },
   ],
   creator: 'Meldiu',
-  description: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,
-  keywords: ['KeyWord1', 'KeyWord2', 'KeyWord3'],
+  description: `Offering professional light demolition, furniture pickup, and comprehensive waste removal for homes and businesses. Declutter your space with Junk Squad's reliable services.`,
+  keywords: ['Junk Removal', 'Light Demolition', 'Furniture Pickup'],
   openGraph: {
     title: 'Full Service Junk Removal Services | JunkSquad',
     description: `Declutter your space with Junk Squad's professional junk removal and light demolition services. We handle it all, from furniture pickup to comprehensive waste disposal.`,

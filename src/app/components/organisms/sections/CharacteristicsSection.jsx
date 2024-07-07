@@ -13,12 +13,13 @@ export function CharacteristicsSection() {
       <div className={styles.content}>
         <div className={styles['image-container']}>
           <Image
-            src="/characteristics.webp"
-            alt="Men carrying a box spring."
-            width={730}
-            height={410}
+            src="/about-gif.gif"
+            alt="Men working at JunkSquad."
+            width={600}
+            height={400}
             loading="lazy"
             className={styles.image}
+            unoptimized
           />
         </div>
         <div className={styles.characteristics}>
