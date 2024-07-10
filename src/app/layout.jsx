@@ -6,6 +6,7 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/700.css'
 import './globals.css'
 import { Header, Footer } from '@/components/organisms/ui'
+import { Shape } from '@/components/atoms/ui'
 
 export const metadata = {
   title: {
@@ -49,6 +50,8 @@ export default function RootLayout({ children }) {
       <body>
         <CssBaseline />
         <Header />
+        {/* Shape between HeroSection and AboutSection */}
+        <Shape />
         <main style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
           {children}
         </main>

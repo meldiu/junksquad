@@ -14,7 +14,12 @@ export default function NotFoundPage() {
     >
       <div className={styles.container}>
         <div className={styles['image-container']}>
-          <Image src={'/truck-404.svg'} alt="" width={920} height={920} />
+          <Image
+            src={'/truck-404.svg'}
+            alt="Illustration of an empty truck"
+            width={920}
+            height={920}
+          />
         </div>
         <div className={styles.content}>
           <h2 className={styles.title}>{`Oops! That page doesn't exist.`}</h2>

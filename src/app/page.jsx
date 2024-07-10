@@ -15,10 +15,10 @@ import {
 export default function HomePage() {
   return (
     <>
-      <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
+      <Section>
         <HeroSection />
       </Section>
-      <Section style={{ backgroundColor: 'var(--blue--ribbon--300)' }}>
+      <Section>
         <AboutSection />
       </Section>
       <Section>

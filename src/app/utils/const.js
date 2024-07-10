@@ -79,7 +79,7 @@ export const PROCESS = [
     paragraph:
       'Fill out our form to book a call and schedule an appointment that fits your needs.',
     src: '/calendar.svg',
-    altImage: 'TODO',
+    altImage: 'Illustration of an calendar',
   },
   {
     number: '02',
@@ -87,7 +87,7 @@ export const PROCESS = [
     paragraph:
       'Our team of professionals will arrive at your location to collect the items you wish to remove.',
     src: '/truck.svg',
-    altImage: 'TODO',
+    altImage: 'Illustration of an truck',
   },
   {
     number: '03',
@@ -95,7 +95,7 @@ export const PROCESS = [
     paragraph:
       'The collected items will be responsibly disposed of, whenever possible, and donations will be made whenever feasible.',
     src: '/dumpster.svg',
-    altImage: 'TODO',
+    altImage: 'Illustration of an dumpster',
   },
   {
     number: '04',
@@ -103,7 +103,7 @@ export const PROCESS = [
     paragraph:
       'You will receive confirmation that the service has been satisfactorily completed.',
     src: '/phone.svg',
-    altImage: 'TODO',
+    altImage: 'Illustration of an cellphone',
   },
 ]
 
