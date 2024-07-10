@@ -44,10 +44,10 @@ export function HeroSection() {
       </div>
       <div className={styles['image-container']}>
         <Image
-          src="/hero-img.webp"
+          src="/hero-image.webp"
           alt="Man carrying a hand trolley."
-          width={600}
-          height={400}
+          width={480}
+          height={580}
           loading="eager"
           priority
           quality={100}
