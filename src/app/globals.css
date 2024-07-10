@@ -64,4 +64,7 @@ body {
     font-family: var(--f-f-primary);
     font-size: var(--fs-base);
     color: var(--casper--900);
+
+    overflow-x: hidden;
+    position: relative;
 }
