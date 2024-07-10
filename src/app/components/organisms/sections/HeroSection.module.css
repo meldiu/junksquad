@@ -6,13 +6,13 @@
     z-index: 100;
 
     padding-top: 80px;
-    gap: 5rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    width: 100%;
 }
 
 .title-container {
@@ -38,11 +38,23 @@
         flex-direction: row;
         align-items: center;
         padding-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .title {
+        text-wrap: pretty;
     }
 
     .image-container {
-        display: flex;
-        width: 100%;
+        display: block;
+        width: 480px;
         height: 100%;
+    }
+
+    .image-container img {
+        width: 480px;
+        height: 580px;
+        object-fit: cover;
     }
 }

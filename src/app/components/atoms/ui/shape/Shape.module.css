@@ -27,12 +27,6 @@
     }
 
     .custom-shape-divider {
-        top: 455px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .custom-shape-divider svg {
-        height: 680px;
+        top: 500px;
     }
 }
