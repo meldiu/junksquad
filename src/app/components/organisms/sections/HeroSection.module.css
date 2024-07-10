@@ -28,21 +28,6 @@
     color: var(--blue--ribbon--600)
 }
 
-/* Wave/shape */
-.container::after {
-    content: '';
-    border-top-left-radius: 100% 60%;
-    border-top-right-radius: 100% 60%;
-    position: absolute;
-    top: -5rem;
-    left: -5rem;
-    z-index: -1;
-    width: calc(100% + 10rem);
-    background-color: var(--blue--ribbon--50);
-    height: 100%;
-    transform: rotate(180deg);
-}
-
 .image-container {
     display: none;
 }
