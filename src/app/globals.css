@@ -54,6 +54,11 @@
     --max-width: 1440px;
 }
 
+*::selection {
+    background-color: var(--blue--ribbon--800);
+    color: var(--casper--50);
+}
+
 body {
     background-color: var(--blue--ribbon--50);
     font-family: var(--f-f-primary);
