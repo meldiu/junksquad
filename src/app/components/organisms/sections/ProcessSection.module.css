@@ -26,8 +26,10 @@
 @media screen and (min-width: 992px) {
     .processes-container {
         display: grid;
-        grid-template-columns: repeat(11, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(8, auto);
+        align-items: center;
+        justify-items: center;
         row-gap: 3rem;
         column-gap: 0;
     }
@@ -60,22 +62,22 @@
     }
 
     .processes-container::after {
-        height: 86px;
+        height: 65px;
         top: 10%;
-        left: 33%;
+        left: 39%;
         background-image: url('/embroidery-01.svg');
     }
 
     .processes-container::before {
-        height: 95px;
+        height: 74px;
         top: 42%;
-        left: 33%;
+        left: 39%;
         background-image: url('/embroidery-02.svg');
         transform: rotate(-20deg);
     }
 
     .processes-container> :nth-child(1)::after {
-        height: 111px;
+        height: 86px;
         top: 180%;
         left: 100%;
         background-image: url('/embroidery-03.svg');
@@ -89,6 +91,6 @@
         z-index: -1;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 340px;
+        width: 260px;
     }
 }
