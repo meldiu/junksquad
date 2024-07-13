@@ -80,6 +80,7 @@ export function Form() {
               message: 'Name must not exceed 48 characters',
             },
           })}
+          error={!!errors.name}
         />
         {errors.name && (
           <span className={styles.error}>{errors.name.message}</span>
@@ -99,6 +100,7 @@ export function Form() {
             ),
             maxLength: 15,
           }}
+          error={!!errors.phone}
           {...register('phone', {
             required: 'Please enter a phone number',
             pattern: {
@@ -133,6 +135,7 @@ export function Form() {
               message: 'Address must not exceed 255 characters',
             },
           })}
+          error={!!errors.address}
         />
         {errors.address && (
           <span className={styles.error}>{errors.address.message}</span>
@@ -183,6 +186,7 @@ export function Form() {
             },
           }}
           onClick={handleSubmit}
+          disabled={loading}
         >
           {`Send`}
           {loading && 'ing...'}

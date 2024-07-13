@@ -11,14 +11,11 @@
     content: '';
     position: absolute;
     background-color: var(--spring--green--200);
-
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-
     top: 3%;
     left: -25%;
-
     z-index: -1;
 }
 

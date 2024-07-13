@@ -1,6 +1,5 @@
 .container {
     padding: 2.5rem 2rem;
-    overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
