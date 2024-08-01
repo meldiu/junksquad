@@ -25,7 +25,7 @@ export function Testimony({ name = 'John', description, stars }) {
         value={stars}
         precision={0.5}
         readOnly
-        style={{ color: 'var(--blue--ribbon--500)' }}
+        style={{ color: 'var(--blue--ribbon--500)', marginTop: 'auto' }}
       />
       <span>{}</span>
     </div>
