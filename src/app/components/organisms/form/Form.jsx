@@ -23,7 +23,6 @@ export function Form() {
       date: null,
     },
   })
-
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -36,19 +35,23 @@ export function Form() {
       formDataObj.append(key, data[key])
     }
 
-    const result = await fetch('/api/send', {
-      method: 'POST',
-      body: formDataObj,
-    })
+    try {
+      const result = await fetch('/api/send', {
+        method: 'POST',
+        body: formDataObj,
+      })
 
-    if (result.status === 200) {
-      setLoading(false)
-      reset()
-    }
+      if (result.status === 200) {
+        reset()
+      }
 
-    if (result.status === 500) {
-      setLoading(false)
+      if (result.status === 500) {
+        setError(true)
+      }
+    } catch (error) {
       setError(true)
+    } finally {
+      setLoading(false)
     }
   }
 

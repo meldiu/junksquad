@@ -2,6 +2,7 @@ import styles from './NotFound.module.css'
 import Image from 'next/image'
 import { Section } from '@/components/atoms/ui'
 import { BUSINESS_PHONE } from '@/utils/const'
+import Link from 'next/link'
 
 export default function NotFoundPage() {
   return (
@@ -26,9 +27,11 @@ export default function NotFoundPage() {
           <p
             className={styles.paragraph}
           >{`We seem to have misplaced the page you were looking for. Don't worry though, we'll help you find what you need!`}</p>
-          <span
-            className={styles['helper-text']}
-          >{`Contact us at ${BUSINESS_PHONE} and we'll point you in the right direction.`}</span>
+          <span className={styles['helper-text']}>
+            {`Contact us at`}{' '}
+            <Link href={`tel:${BUSINESS_PHONE}`}>{BUSINESS_PHONE}</Link>{' '}
+            {`and we'll point you in the right direction.`}
+          </span>
         </div>
       </div>
     </Section>

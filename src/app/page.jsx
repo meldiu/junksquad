@@ -10,7 +10,7 @@ import {
   AboutSection,
   HeroSection,
   ProcessSection,
-} from './components/organisms/sections'
+} from '@/components/organisms/sections'
 
 export default function HomePage() {
   return (

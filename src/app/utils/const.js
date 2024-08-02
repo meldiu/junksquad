@@ -47,27 +47,26 @@ export const CHARACTERISTICS = [
 
 export const TESTIMONIALS = [
   {
-    name: 'John Doe',
+    name: 'Sarah M.',
     description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+      'Junk Squad made my life so much easier! They were fast, efficient and took care of everything. Highly recommended!',
     stars: 4.5,
   },
   {
-    name: 'Jahn Doe',
+    name: 'Tom P.',
     description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+      'I was dreading having to get rid of all that junk in my garage, but Junk Squad made it a breeze. Great service!',
     stars: 5,
   },
   {
-    name: 'Jhon Doe',
-    description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+    name: 'Lisa T.',
+    description: `They showed up on time, worked quickly and left my house clutter free. I'm so happy with their service.`,
     stars: 4,
   },
   {
-    name: 'Jhan Doe',
+    name: 'Mike S.',
     description:
-      'Very professional, knowledgeable as to what he had to do.  I would recommend anytime.',
+      'I was amazed at how much stuff they were able to haul away. Junk Squad is the real deal. Thank you!',
     stars: 5,
   },
 ]
